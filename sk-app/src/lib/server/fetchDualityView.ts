@@ -28,21 +28,21 @@ export async function fetchDualityView({ viewName, query = '', limit, offset }: 
 	return res.json();
 }
 
-export type Link = {
+type Metadata = {
+	etag: string;
+	asof: string;
+};
+
+type Link = {
 	rel: string;
 	href: string;
 };
 
 export type DualityViewResponse<T> = {
-	items: T[];
+	items: (T & { _metadata: Metadata; links: Link[] })[];
 	hasMore: boolean;
 	limit: number;
 	offset: number;
 	count: number;
 	links: Link[];
-};
-
-export type Metadata = {
-	etag: string;
-	asof: string;
 };

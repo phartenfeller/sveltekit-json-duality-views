@@ -1,9 +1,4 @@
-import {
-	fetchDualityView,
-	type DualityViewResponse,
-	type Link,
-	type Metadata
-} from '$lib/server/fetchDualityView';
+import { fetchDualityView, type DualityViewResponse } from '$lib/server/fetchDualityView';
 import type { PageServerLoad } from './$types';
 
 type Movie = {
@@ -19,8 +14,6 @@ type ActorDetails = {
 	_id: number;
 	name: string;
 	movies: Movie[];
-	_metadata: Metadata;
-	links: Link[];
 };
 
 function fetchActorDetails(actorId: number) {

@@ -19,6 +19,8 @@ export async function fetchDualityView({ viewName, query = '', limit, offset }: 
 
 	const url = `https://apex23c.phartenfeller.de/ords/movies/${viewName}?${urlParams.toString()}`;
 
+	console.log('fetchDualityView:', url);
+
 	const res = await fetch(url);
 
 	if (!res.ok) {

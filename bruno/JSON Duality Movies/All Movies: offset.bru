@@ -1,0 +1,16 @@
+meta {
+  name: All Movies: offset
+  type: http
+  seq: 8
+}
+
+get {
+  url: https://apex23c.phartenfeller.de/ords/movies/all_movies_jdv?limit=150&offset=150
+  body: none
+  auth: none
+}
+
+params:query {
+  limit: 150
+  offset: 150
+}

@@ -1,0 +1,15 @@
+meta {
+  name: All Movies: sort (workaround)
+  type: http
+  seq: 6
+}
+
+get {
+  url: https://apex23c.phartenfeller.de/ords/movies/all_movies_jdv?q={"$orderby":{"year":"1"}}
+  body: none
+  auth: none
+}
+
+params:query {
+  q: {"$orderby":{"year":"1"}}
+}

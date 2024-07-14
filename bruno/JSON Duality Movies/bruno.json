@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "JSON Duality Movies",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

@@ -1,0 +1,15 @@
+meta {
+  name: All Movies: filter 2
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://apex23c.phartenfeller.de/ords/movies/all_movies_jdv?q={"rating":{"$gt":  9}}
+  body: none
+  auth: none
+}
+
+params:query {
+  q: {"rating":{"$gt":  9}}
+}

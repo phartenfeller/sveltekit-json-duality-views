@@ -1,0 +1,15 @@
+meta {
+  name: All Movies: filter
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://apex23c.phartenfeller.de/ords/movies/all_movies_jdv?q={"title":{"$like": "%Star%"}}
+  body: none
+  auth: none
+}
+
+params:query {
+  q: {"title":{"$like": "%Star%"}}
+}

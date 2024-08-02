@@ -1,0 +1,47 @@
+meta {
+  name: All Movies: Add comment
+  type: http
+  seq: 11
+}
+
+put {
+  url: https://apex23c.phartenfeller.de/ords/movies/all_movies_jdv/52357
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "_id": 52357,
+    "title": "Vertigo",
+    "year": 1958,
+    "rating": 8.3,
+    "comments": [
+      {
+        "commentId": 241,
+        "comment": "Test"
+      },
+       {
+        "comment": "Hello Kscope"
+      }
+    ],
+    "_metadata": {
+      "etag": "3F75F883869184D15D8BE352FC98BFE5",
+      "asof": "00000000012B4993"
+    },
+    "links": [
+      {
+        "rel": "self",
+        "href": "https://apex23c.phartenfeller.de/ords/movies/all_movies_jdv/52357"
+      },
+      {
+        "rel": "describedby",
+        "href": "https://apex23c.phartenfeller.de/ords/movies/metadata-catalog/all_movies_jdv/item"
+      },
+      {
+        "rel": "collection",
+        "href": "https://apex23c.phartenfeller.de/ords/movies/all_movies_jdv/"
+      }
+    ]
+  }
+}
